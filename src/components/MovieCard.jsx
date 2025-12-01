@@ -1,5 +1,3 @@
-import React from "react";
-
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500/";
 
 const MovieCard = ({ movie }) => {
@@ -17,7 +15,7 @@ const MovieCard = ({ movie }) => {
 				src={
 					poster_path
 						? `${IMAGE_BASE_URL}${poster_path}`
-						: "/no-movie.png"
+						: "no-movie.png"
 				}
 				alt={title}
 			/>
@@ -26,7 +24,7 @@ const MovieCard = ({ movie }) => {
 				<h3>{title}</h3>
 				<div className="content">
 					<div className="rating">
-						<img src="/star.svg" alt="Start Icon" />
+						<img src="star.svg" alt="Start Icon" />
 						<p>{vote_average ? vote_average.toFixed(1) : "N/A"}</p>
 					</div>
 

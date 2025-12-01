@@ -2,11 +2,7 @@ function Search({ searchTerm, onChange }) {
 	return (
 		<div className="search">
 			<div>
-				<img
-					src="/search.svg"
-					alt="search"
-					className="cursor-pointer"
-				/>
+				<img src="search.svg" alt="search" className="cursor-pointer" />
 
 				<input
 					type="text"
